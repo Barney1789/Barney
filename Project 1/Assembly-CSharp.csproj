@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\LoseCollider.cs" />
+     <Compile Include="Assets\Scripts\Paddle.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/Program Folders/GitHub/Saves/Barney/Project 1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

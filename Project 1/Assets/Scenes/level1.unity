@@ -510,6 +510,7 @@ GameObject:
   - component: {fileID: 1234435836}
   - component: {fileID: 1234435835}
   - component: {fileID: 1234435837}
+  - component: {fileID: 1234435838}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -574,8 +575,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234435834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.05, y: 2.84, z: -10}
-  m_LocalScale: {x: 1.3214419, y: 1.725144, z: 1}
+  m_LocalPosition: {x: 6.75, y: 2.66, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -612,6 +613,19 @@ PolygonCollider2D:
       - {x: 1.28, y: -0.32}
       - {x: 1.28, y: 0.089999996}
       - {x: 1.0699999, y: 0.17999999}
+--- !u!114 &1234435838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234435834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68c169265719d2489e93e9e76b2e921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenwidthInUnits: 16
 --- !u!1 &1511554166
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511554166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.016, y: -0.04, z: 0}
+  m_LocalPosition: {x: -0.016, y: -0.04, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
