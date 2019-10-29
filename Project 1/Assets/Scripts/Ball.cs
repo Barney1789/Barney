@@ -6,6 +6,8 @@ public class Ball : MonoBehaviour
 {
     [SerializeField] Paddle myPaddle;
 
+    [SerializeField] AudioClip[] ballsounds;
+
     Vector2 paddleToBallDistance;
 
     bool hasStarted = false;
@@ -39,5 +41,17 @@ public class Ball : MonoBehaviour
     {
         Vector2 paddlePosition = myPaddle.transform.position;
         this.transform.position = paddlePosition + paddleToBallDistance;
+    }
+
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (hasStarted)
+        {
+            // GetComponent<AudioSource>().Play();
+            int randomNumber = UnityEngine.Random.Range(0, ballsounds.Length);
+            AudioClip sound = ballsounds[randomNumber];
+
+            GetComponent<AudioSource>().PlayOneShot(sound);
+        }
     }
 }
